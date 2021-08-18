@@ -54,7 +54,7 @@ impl fmt::Display for Expression {
                 let xs: Vec<String> = list.iter().map(|x| x.to_string()).collect();
                 format!("({})", xs.join(","))
             }
-            Expression::Function(_) => "Functiontion {}".to_string(),
+            Expression::Function(_) => "Function {}".to_string(),
             Expression::Lambda(_) => "Lambda {}".to_string(),
         };
 
